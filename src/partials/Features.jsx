@@ -62,7 +62,7 @@ function Features() {
                   </div>
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5  h-[120px] rounded-xl border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center text-lg p-5 h-[120px] rounded-xl border transition duration-300 ease-in-out mb-3  justify-between ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
@@ -77,13 +77,13 @@ function Features() {
                   </div>
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5  h-[120px] rounded-xl border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center text-lg p-5 h-[120px] rounded-xl border transition duration-300 ease-in-out mb-3  justify-between ${tab !== 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Works offline</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="text-gray-600">No dependency on Spotify's Web API</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
