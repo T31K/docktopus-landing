@@ -17,7 +17,6 @@ function Home() {
         <HeroHome />
         <FeaturesHome />
         <FeaturesBlocks />
-        <Testimonials />
         <Newsletter />
       </main>
       
@@ -28,3 +27,9 @@ function Home() {
 }
 
 export default Home;
+
+
+
+
+
+
