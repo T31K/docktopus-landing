@@ -22,7 +22,7 @@ function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-shrink-0 mr-4">
             <Link to="/" className="block" aria-label="Cruip">
-              <img src={Logo} alt="" />
+              <img src={Logo} alt=""  className='w-[50px] bg-gray-200' />
             </Link>
           </div>
 
