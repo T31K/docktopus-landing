@@ -36,7 +36,7 @@ function Features() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">Don't fight the dock, enhance it</h1>
-            <p className="text-xl text-gray-600">Maximize your screen real estate with <span className='font-semibold'>Spotidock</span> <br/> seamless integration with the macOS dock.</p>
+            <p className="text-xl text-gray-600">Maximize your screen real estate with <span className='font-semibold'>Docktopus</span> <br/> seamless integration with the macOS dock.</p>
           </div>
           
           {/* Section content */}
