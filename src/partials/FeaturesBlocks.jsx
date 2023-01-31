@@ -5,35 +5,16 @@ import emojiData from 'react-apple-emojis/src/data.json';
 function FeaturesBlocks() {
   const [features, setFeatures] = useState([
     {
-      scopeTitle: 'App',
-      scopeColor: 'bg-red-200',
+      scopeTitle: 'Logistics',
+      scopeColor: 'bg-blue-200',
       title: 'Clearer pricing plan',
-      status: 'In Progress',
       statusColor: 'bg-green-200',
       emoji: '',
-      votes: 32,
+      votes: '👍🏻 32',
     },
     {
       scopeTitle: 'App',
-      scopeColor: 'bg-red-200',
-      title: 'Enhanced preferences page',
-      status: 'In Progress',
-      statusColor: 'bg-green-200',
-      emoji: '',
-      votes: 32,
-    },
-    {
-      scopeTitle: 'App',
-      scopeColor: 'bg-red-200',
-      title: 'Editable custom shortcuts',
-      status: 'In Progress',
-      statusColor: 'bg-green-200',
-      emoji: '',
-      votes: 32,
-    },
-    {
-      scopeTitle: 'App',
-      scopeColor: 'bg-red-200',
+      scopeColor: 'bg-gray-300',
       title: 'Repeat/Shuffle button',
       status: 'In Progress',
       statusColor: 'bg-green-200',
@@ -42,43 +23,59 @@ function FeaturesBlocks() {
     },
     {
       scopeTitle: 'App',
-      scopeColor: 'bg-red-200',
+      scopeColor: 'bg-gray-300',
+      title: 'Editable custom shortcuts',
+      status: 'Testing',
+      statusColor: 'bg-yellow-200',
+      emoji: '',
+      votes: 32,
+    },
+    {
+      scopeTitle: 'App',
+      scopeColor: 'bg-gray-300',
+      title: 'Enhanced preferences page',
+      status: 'In Progress',
+      statusColor: 'bg-green-200',
+      emoji: '',
+      votes: 32,
+    },
+    {
+      scopeTitle: 'App',
+      scopeColor: 'bg-gray-300',
       title: 'Volume control knob',
-      status: 'In Progress',
       statusColor: 'bg-green-200',
       emoji: '',
       votes: 32,
     },
     {
       scopeTitle: 'App',
-      scopeColor: 'bg-red-200',
-      title: 'List of previously played songs',
-      status: 'In Progress',
-      statusColor: 'bg-green-200',
+      scopeColor: 'bg-gray-300',
+      title: 'List of previously played songs (popup) ',
+      status: 'Backlog',
+      statusColor: 'bg-purple-200',
       emoji: '',
       votes: 32,
     },
     {
       scopeTitle: 'App',
-      scopeColor: 'bg-red-200',
+      scopeColor: 'bg-gray-300',
       title: 'Installation via brew',
-      status: 'In Progress',
       statusColor: 'bg-green-200',
       emoji: '',
       votes: 32,
     },
     {
       scopeTitle: 'App',
-      scopeColor: 'bg-red-200',
+      scopeColor: 'bg-gray-300',
       title: 'Star current song',
-      status: 'In Progress',
-      statusColor: 'bg-green-200',
+      status: 'Backlog',
+      statusColor: 'bg-purple-200',
       emoji: '',
       votes: 32,
     },
     {
       scopeTitle: 'App',
-      scopeColor: 'bg-red-200',
+      scopeColor: 'bg-gray-300',
       title: 'Minified final build',
       status: 'In Progress',
       statusColor: 'bg-green-200',
@@ -87,14 +84,20 @@ function FeaturesBlocks() {
     },
     {
       scopeTitle: 'App',
-      scopeColor: 'bg-red-200',
+      scopeColor: 'bg-gray-300',
       title: 'Minified final build',
-      status: 'In Progress',
       statusColor: 'bg-green-200',
       emoji: '',
       votes: 32,
     },
   ]);
+  const chunkSize = Math.ceil(features.length / 3);
+  const results = [
+    features.slice(0, chunkSize),
+    features.slice(chunkSize, chunkSize * 2),
+    features.slice(chunkSize * 2),
+  ];
+
   return (
     <section className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
@@ -116,30 +119,41 @@ function FeaturesBlocks() {
             </p>
           </div>
 
-          {/* Items */}
-          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
-            {features.map((feat, key) => {
+          <div className="flex space-between">
+            {results.map((result) => {
               return (
-                <div
-                  className="relative flex-col items-center p-6 bg-white rounded-xl shadow-xl"
-                  key={key}
-                >
-                  <div className="flex">
-                    <div className={`${feat.scopeColor} rounded-full px-3 block font-medium text-md text-center`}>
-                      {feat.scopeTitle}
-                    </div>
-                    <div className={`${feat.statusColor} rounded-full px-3 mx-1 block font-medium text-md text-center`}>
-                      {feat.status}
-                    </div>
-                  </div>
-                  <div className="flex justify-between">
-                    <p className="text-gray-600 text-left text-lg mt-3 ml-1 font-medium">{feat.title}</p>
-                    <div>
-                      <div className={`rounded-full px-3 bg-gray-300 mx-1 mt-4 block font-medium text-md text-center`}>
-                        {feat.votes}
+                <div className="w-[33%]">
+                  {result.map((feat, key) => {
+                    return (
+                      <div
+                        className="relative flex-col items-center p-6 bg-white rounded-xl shadow-xl m-3"
+                        key={key}
+                      >
+                        <div className="flex">
+                          <div className={`bg-gray-200 rounded-full px-3 block font-medium text-md text-center`}>
+                            {feat.scopeTitle}
+                          </div>
+                          {feat.status ? (
+                            <div
+                              className={`${feat.statusColor} rounded-full px-3 mx-1 block font-medium text-md text-center`}
+                            >
+                              {feat.status}
+                            </div>
+                          ) : (
+                            ''
+                          )}
+                        </div>
+                        <div className="flex justify-between">
+                          <p className="text-gray-600 text-left text-lg mt-3 ml-1 font-medium">{feat.title}</p>
+                          <div>
+                            <div
+                              className={`rounded-full px-3 bg-gray-300 mx-1 mt-4 block font-medium text-md text-center`}
+                            ></div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                    );
+                  })}
                 </div>
               );
             })}
