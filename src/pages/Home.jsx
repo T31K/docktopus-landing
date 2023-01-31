@@ -12,24 +12,17 @@ function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       <Header />
-      
+
       <main className="flex-grow">
         <HeroHome />
         <FeaturesHome />
         <FeaturesBlocks />
         {/* <Newsletter /> */}
       </main>
-      
-      <Footer />
 
+      <Footer />
     </div>
   );
 }
 
 export default Home;
-
-
-
-
-
-
