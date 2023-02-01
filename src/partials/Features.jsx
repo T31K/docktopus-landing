@@ -4,7 +4,7 @@ import Transition from '../utils/Transition';
 import FeaturesBg from '../images/features-bg.png';
 import Screenshot from '../images/screenshot.gif';
 import Feature1 from '../images/features_1.svg';
-import Feature2 from '../images/features_2.svg';
+import Feature3 from '../images/features_3.svg';
 import FeaturesElement from '../images/features-element.png';
 
 function Features() {
@@ -180,7 +180,7 @@ function Features() {
                   <div className="relative inline-flex flex-col">
                     <div className="h-[450px] w-[500px] border-gray-200 border-[2px] bg-[#fdfdfd] rounded-3xl">
                       <img
-                        src={Feature2}
+                        src={Feature1}
                         alt=""
                         className="w-[350px] mt-[50px] mx-auto"
                       />
@@ -202,7 +202,7 @@ function Features() {
                   <div className="relative inline-flex flex-col">
                     <div className="h-[450px] w-[500px] border-gray-200 border-[2px] bg-[#fdfdfd] rounded-3xl">
                       <img
-                        src={Feature1}
+                        src={Feature3}
                         alt=""
                         className="w-[350px] mt-[50px] mx-auto"
                       />
