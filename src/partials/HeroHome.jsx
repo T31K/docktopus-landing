@@ -105,7 +105,7 @@ function HeroHome() {
                 >
                   <div>
                     <a
-                      className="btn text-white bg-[#667da6] hover:bg-purple-400 font-semibold rounded-xl w-full mb-4 sm:w-auto sm:mb-0"
+                      className="btn text-white bg-[#667da6] hover:bg-[#227aaa] font-semibold rounded-xl w-full mb-4 sm:w-auto sm:mb-0"
                       href="#0"
                     >
                       Download Free
