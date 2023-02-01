@@ -10,7 +10,6 @@ function FeaturesBlocks() {
       title: 'Clearer pricing plan',
       statusColor: 'bg-green-200',
       emoji: '',
-      votes: '👍🏻 32',
     },
     {
       scopeTitle: 'App',
