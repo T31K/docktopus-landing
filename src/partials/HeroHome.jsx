@@ -3,6 +3,7 @@ import Modal from '../utils/Modal';
 
 import HeroImage from '../images/hero-image.png';
 import AppScreen from '../images/app.png';
+import Logo from '../images/logo.png';
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -69,7 +70,12 @@ function HeroHome() {
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              Sleek. Convenient. <br />
+              Sleek. Convenient.{' '}
+              <img
+                src={Logo}
+                className="w-[80px] h-[80px] inline"
+              />{' '}
+              <br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#667da6] to-[#203673]">
                 Music at your fingertips
               </span>
