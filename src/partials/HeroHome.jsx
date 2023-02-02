@@ -66,10 +66,13 @@ function HeroHome() {
         <div className="pt-20 pb-12 md:pt-25 md:pb-20">
           {/* Section header */}
           <div className="text-center">
-            <img
-              src={Logo}
-              className="w-[15%] h-[15%] inline"
-            />
+            <div className="flex items-center justify-center">
+              <img
+                src={Logo}
+                className="w-[15%] h-[15%] inline ml-[65px]"
+              />
+              <div className="w-[60px] ml-[5px] self-end bg-gray-200 rounded-lg font-semibold p-1">BETA</div>
+            </div>
             <h1
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
