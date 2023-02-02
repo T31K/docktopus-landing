@@ -25,7 +25,7 @@ function Features() {
   }, [tab]);
 
   return (
-    <section className="relative h-[100vh] ">
+    <section className="relative h-[md-100vh] ">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
         className="absolute inset-0 pointer-events-none mb-16"
@@ -157,11 +157,11 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <div className="h-[450px] w-[500px] border-gray-200 border-[2px] bg-[#fdfdfd] rounded-3xl">
+                    <div className=" md:w-[500px] sm:w-[100%] md:h-[450px] border-gray-200 border-[2px] p-4 bg-[#fdfdfd] rounded-3xl">
                       <img
                         src={Feature1}
                         alt=""
-                        className="w-[350px] mt-[50px] mx-auto"
+                        className="w-[80%] mx-auto"
                       />
                     </div>
                   </div>
@@ -179,11 +179,11 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <div className="h-[450px] w-[500px] border-gray-200 border-[2px] bg-[#fdfdfd] rounded-3xl">
+                    <div className=" md:w-[500px] sm:w-[100%] md:h-[450px] border-gray-200 border-[2px] p-4 bg-[#fdfdfd] rounded-3xl">
                       <img
                         src={Feature2}
                         alt=""
-                        className="w-[350px] mt-[50px] mx-auto"
+                        className="w-[80%] mx-auto"
                       />
                     </div>
                   </div>
@@ -201,11 +201,11 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <div className="h-[450px] w-[500px] border-gray-200 border-[2px] bg-[#fdfdfd] rounded-3xl">
+                    <div className=" md:w-[500px] sm:w-[100%] md:h-[450px] border-gray-200 border-[2px] p-4 bg-[#fdfdfd] rounded-3xl">
                       <img
                         src={Feature3}
                         alt=""
-                        className="w-[350px] mt-[50px] mx-auto"
+                        className="w-[80%] mx-auto"
                       />
                     </div>
                   </div>

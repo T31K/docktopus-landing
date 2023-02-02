@@ -125,10 +125,10 @@ function FeaturesBlocks() {
             </p>
           </div>
 
-          <div className="flex space-between">
+          <div className="md:flex md:space-between">
             {results.map((result) => {
               return (
-                <div className="w-[33%]">
+                <div className="w-[100%]">
                   {result.map((feat, key) => {
                     return (
                       <div

@@ -66,16 +66,15 @@ function HeroHome() {
         <div className="pt-20 pb-12 md:pt-25 md:pb-20">
           {/* Section header */}
           <div className="text-center">
+            <img
+              src={Logo}
+              className="w-[15%] h-[15%] inline"
+            />
             <h1
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              Sleek. Convenient.{' '}
-              <img
-                src={Logo}
-                className="w-[80px] h-[80px] inline"
-              />{' '}
-              <br />
+              Sleek. Convenient. <br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#667da6] to-[#203673]">
                 Music at your fingertips
               </span>
