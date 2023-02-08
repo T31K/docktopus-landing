@@ -133,7 +133,7 @@ function HeroHome() {
                   <div>
                     <a
                       className="btn text-white bg-gray-800 hover:bg-gray-600 font-semibold rounded-xl w-full sm:w-auto sm:ml-4"
-                      href="#0"
+                      href="https://buy.stripe.com/4gweWX0xwftya1afYY"
                       onClick={() => sendLocation('purchase_license')}
                     >
                       Purchase License
