@@ -8,6 +8,16 @@ import Logo from '../images/logo.png';
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
+  const sendLocation = async (location) => {
+    const response = await fetch('https://api.docktopus.com/analytics', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ location }),
+    });
+
+    const result = await response.json();
+  };
+
   return (
     <section className="relative h-[100vh] flex items-center">
       {/* Illustration behind hero content */}
@@ -115,6 +125,7 @@ function HeroHome() {
                     <a
                       className="btn text-white bg-[#667da6] font-semibold rounded-xl w-full mb-4 sm:w-auto sm:mb-0"
                       href="#0"
+                      onClick={() => sendLocation('download_free')}
                     >
                       Download Free
                     </a>
@@ -123,6 +134,7 @@ function HeroHome() {
                     <a
                       className="btn text-white bg-gray-800 hover:bg-gray-600 font-semibold rounded-xl w-full sm:w-auto sm:ml-4"
                       href="#0"
+                      onClick={() => sendLocation('purchase_license')}
                     >
                       Purchase License
                     </a>
