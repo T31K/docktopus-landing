@@ -124,8 +124,7 @@ function HeroHome() {
                   <div>
                     <a
                       className="btn text-white bg-[#667da6] font-semibold rounded-xl w-full mb-4 sm:w-auto sm:mb-0"
-                      href="#0"
-                      onClick={() => sendLocation('download_free')}
+                      href="https://github.com/T31K/docktopus-release/raw/master/Docktopus-1.0.0-beta.1.dmg"
                     >
                       Download Free
                     </a>
@@ -133,8 +132,8 @@ function HeroHome() {
                   <div>
                     <a
                       className="btn text-white bg-gray-800 hover:bg-gray-600 font-semibold rounded-xl w-full sm:w-auto sm:ml-4"
+                      target="_blank"
                       href="https://buy.stripe.com/4gweWX0xwftya1afYY"
-                      onClick={() => sendLocation('purchase_license')}
                     >
                       Purchase License
                     </a>

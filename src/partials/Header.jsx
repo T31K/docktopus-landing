@@ -41,12 +41,13 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <Link
-                  to="/signup"
+                <a
+                  href="https://github.com/T31K/docktopus-release/raw/master/Docktopus-1.0.0-beta.1.dmg"
+                  target="_blank"
                   className="btn-sm text-gray-200 px-7 rounded-xl font-bold bg-gray-900 hover:bg-gray-800 ml-3"
                 >
                   <span>Download</span>
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
